@@ -55,9 +55,7 @@ a:nth-of-type(12) {
 }
 
 @keyframes jump {
-  0% {
-    transform: scale(1, 1) translateY(0);
-  }
+
   10% {
     transform: scale(1.1, 0.9) translateY(0);
   }
@@ -79,3 +77,94 @@ a:nth-of-type(12) {
 }
 
 /* Jouw animaties */
+/* bibber animatie */
+.bibber{
+  animation-name: bibbers;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+  background-color: red;
+}
+
+@keyframes bibbers{
+  10% {
+    transform: scale(1) translateX(.5em);
+  }
+  15% {
+    transform: scale(1) translateX(-.5em) ;
+  }
+  20% {
+    transform: scale(1) translateX(.5em);
+  }
+ 25% {
+  transform: scale(1) translateX(-.5em);
+  }
+ 
+  100% {
+    transform: scale(1) translate(0);
+  }
+}
+/* spin animatie */
+.spin{
+  animation-name: spin;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+@keyframes spin{
+  0% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+    background-color: red;
+  }
+  25% {
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    transform: rotate3d(0, 0, 1, 90deg);
+    background-color: blue;
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+    transform: rotate3d(0, 0, 1, 180deg);
+    background-color: orange;
+  }
+  75% {
+    -webkit-transform: rotate3d(0, 0, 1, 270deg);
+    transform: rotate3d(0, 0, 1, 270deg);
+    background-color: pink;
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 360deg);
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+/* float around animatie */
+.float{
+  animation-name: floataround;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  animation-duration: 2.2s;
+  animation-iteration-count: 1;
+}
+@keyframes floataround{
+  0% {
+    transform: scale(1) translateX(0em) translateY(0em);
+  }
+ 20% {
+    transform: scale(1) translateX(.5em) translateY(.5em);
+    background-color: red;
+  }
+  35% {
+    transform: scale(1) translateX(.5em) translateY(-.5em);
+    background-color: blue;
+  }
+  50% {
+    transform: scale(1) translateX(-.5em) translateY(-.5em);
+    background-color: orange;
+  }
+  80% {
+    transform: scale(1) translateX(-.5em) translateY(.5em);
+    background-color: pink;
+  }
+  100% {
+    transform: scale(1) translateX(0em) translateY(0em);
+  }
+}
