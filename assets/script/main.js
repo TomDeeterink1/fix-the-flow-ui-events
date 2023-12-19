@@ -31,3 +31,39 @@ float.addEventListener('mouseover', floatit)
 function floatit(){
   float.classList.toggle('float')
 }
+
+// growit
+let grow = document.querySelector('.grow')
+
+grow.addEventListener('mouseover', growit)
+
+function growit(){
+  grow.classList.toggle('growit')
+}
+
+// rainbow
+let rainbow = document.querySelector('.rainbow')
+
+rainbow.addEventListener('mouseover', rainbowroad)
+
+function rainbowroad(){
+  rainbow.classList.toggle('road')
+}
+
+// rainbow
+let disapear = document.querySelector('.hide')
+
+disapear.addEventListener('mouseover', hideit)
+
+function hideit(){
+  disapear.classList.toggle('disapear')
+}
+
+// rainbow
+let changeit = document.querySelector('.change')
+
+changeit.addEventListener('mouseover', changeshape)
+
+function changeshape(){
+  changeit.classList.toggle('changeshape')
+}
